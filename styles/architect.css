@@ -8,6 +8,10 @@
 font-family: 'Work Sans', sans-serif;
   }
 
+  .text-light-gray{
+    color: #727272;
+  }
+
 
   header{
     background-color: rgba(255, 144, 14, 0.10);
@@ -53,9 +57,7 @@ font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     color: #131313;
   }
-  .banner-description{
-    color: #727272;
-  }
+  
   .banner img{
     margin-top: 20px;
     width: 100%;
@@ -73,7 +75,7 @@ font-family: 'Work Sans', sans-serif;
 
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 .teams-container{
@@ -96,7 +98,6 @@ main{
     font-size: 2.8rem;
 }
 .teams-title .quick-list{
-    color: #727272;
     font-weight: 500;
 }
 .teams-title .text-features{
@@ -122,8 +123,16 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
+    }
+
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content{
+        padding: 20px;
     }
     
 
@@ -137,7 +146,7 @@ main{
     header{
         padding: 40px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }
   }
